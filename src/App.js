@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import HeaderBlock from "./blocks/header";
+import NotFound from "./blocks/notfound";
 import About from "./pages/about/about";
 import Blog from "./pages/blog/blog";
 import Contact from "./pages/contact/contact";
@@ -13,7 +14,7 @@ import Service from "./pages/services/service";
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <HeaderBlock />
       <Routes>
         <Route path="about" element={<About />} />
@@ -23,6 +24,7 @@ function App() {
         <Route path="portfolio" element={<Portfolio />} />
         <Route path="service" element={<Service />} />
         <Route path="/" element={<Navigate to="/home" replace={true} />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
