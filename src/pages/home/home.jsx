@@ -1,7 +1,10 @@
+import SulCarousel from "./acarousel";
+import "./homestyle.css";
+
 const Home = () => {
   return (
     <div>
-      <p>Home Page</p>
+      <SulCarousel />
     </div>
   );
 };

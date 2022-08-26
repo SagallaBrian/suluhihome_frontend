@@ -5,25 +5,33 @@ import { Link, NavLink } from "react-router-dom";
 
 const HeaderBlock = () => {
   const activeStyle = {
-    color: "#198754",
+    color: "#08c26b",
+  };
+  const navClor = {
+    color: "#fbfbfb",
   };
   const fonts = {
     fontSize: "15px",
   };
   return (
-    <Navbar bg="light" expand="lg">
+    <Navbar expand="lg" fixed="top">
       <Container fluid="lg">
-        <Navbar.Brand as={Link} to="home">
+        <Navbar.Brand
+          as={Link}
+          to="home"
+          style={navClor}
+          className="custom-semibold"
+        >
           Suluhi
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse className="justify-content-end">
+        <Navbar.Collapse className="justify-content-end custom-semibold">
           <Nav style={fonts}>
             <Nav.Link
               as={NavLink}
               to="home"
               className="pe-3"
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              style={({ isActive }) => (isActive ? activeStyle : navClor)}
             >
               Home
             </Nav.Link>
@@ -31,7 +39,7 @@ const HeaderBlock = () => {
               as={NavLink}
               to="about"
               className="pe-3"
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              style={({ isActive }) => (isActive ? activeStyle : navClor)}
             >
               About Us
             </Nav.Link>
@@ -39,7 +47,7 @@ const HeaderBlock = () => {
               as={NavLink}
               to="service"
               className="pe-3"
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              style={({ isActive }) => (isActive ? activeStyle : navClor)}
             >
               Service
             </Nav.Link>
@@ -47,7 +55,7 @@ const HeaderBlock = () => {
               as={NavLink}
               to="portfolio"
               className="pe-3"
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              style={({ isActive }) => (isActive ? activeStyle : navClor)}
             >
               Portfolio
             </Nav.Link>
@@ -55,14 +63,14 @@ const HeaderBlock = () => {
               as={NavLink}
               to="blog"
               className="pe-3"
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              style={({ isActive }) => (isActive ? activeStyle : navClor)}
             >
               Blog
             </Nav.Link>
             <Nav.Link
               as={NavLink}
               to="contact"
-              style={({ isActive }) => (isActive ? activeStyle : undefined)}
+              style={({ isActive }) => (isActive ? activeStyle : navClor)}
             >
               Contact Us
             </Nav.Link>

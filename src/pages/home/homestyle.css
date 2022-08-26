@@ -1,0 +1,30 @@
+/* Carousel Styling */
+.divcaroa,
+.divcarob {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 500px;
+  padding-top: 100px;
+}
+
+.divcaroa {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/bg1.webp");
+}
+
+.divcarob {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/webptwo.jpeg");
+}
+
+.btnview {
+  font-weight: 400 !important;
+  font-size: 11px !important;
+}
+
+.carousel-indicators button {
+  width: 0.6rem !important;
+  height: 0.6rem !important;
+  border-radius: 50%;
+}
