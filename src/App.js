@@ -15,7 +15,7 @@ import Service from "./pages/services/service";
 function App() {
   return (
     <div>
-      <HeaderBlock />
+      <HeaderBlock title={"Suluhi"} />
       <Routes>
         <Route path="about" element={<About />} />
         <Route path="blog" element={<Blog />} />

@@ -3,15 +3,23 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
+import { FaPlay } from "react-icons/fa";
 
 const SulCarousel = () => {
   return (
-    <Carousel fade className="text-white" controls={false}>
+    <Carousel fade className="text-white roboto" controls={false}>
       <Carousel.Item>
         <div className="divcaroa">
           <Container>
             <Row>
-              <Col>1 of 1</Col>
+              <Col>
+                <div className="relativecontainer">
+                  <span className="btnplayspan"></span>
+                  <Button className="btnplay">
+                    <FaPlay />
+                  </Button>
+                </div>
+              </Col>
               <Col>
                 <p>Welcome to Suluhi</p>
                 <h4 className="display-5">
@@ -46,7 +54,14 @@ const SulCarousel = () => {
         <div className="divcarob">
           <Container>
             <Row>
-              <Col>1 of 1</Col>
+              <Col>
+                <div className="relativecontainer">
+                  <span className="btnplayspan"></span>
+                  <Button className="btnplay">
+                    <FaPlay />
+                  </Button>
+                </div>
+              </Col>
               <Col>
                 <p>Premium Solutions</p>
                 <h4 className="display-5">

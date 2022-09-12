@@ -5,10 +5,42 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.custom-semibold {
+.sul-semibold {
   font-weight: 500 !important;
 }
 
-.roboto{
+.custom-light {
+  font-weight: 300 !important;
+}
+
+.sul-normal {
+  font-weight: 400 !important;
+}
+
+.roboto {
   font-family: "Roboto", sans-serif !important;
+}
+
+.sul-theme-green {
+  color: #28df99;
+}
+
+.sul-theme-green-bg {
+  background-color: #28df99;
+}
+
+.sul-theme-blue {
+  color: #6452e8;
+}
+
+.sul-theme-blue-bg {
+  background-color: #6452e8;
+}
+
+.sul-theme-dark {
+  color: #6c6c6c;
+}
+
+.sul-theme-dark-bg {
+  background-color: #6c6c6c;
 }
