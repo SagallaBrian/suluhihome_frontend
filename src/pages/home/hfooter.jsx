@@ -1,6 +1,7 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import { MdOutlineFavoriteBorder } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -58,10 +59,14 @@ const Footer = () => {
           </Row>
         </div>
       </Container>
-      <Container>
-        Copyright ©2022 All rights reserved | This template is made with by
-        Colorlib
-      </Container>
+      <div className="sul-copyright">
+        <Container>
+          <div className="py-4">
+            Copyright ©2022 All rights reserved. Made with&nbsp;
+            <MdOutlineFavoriteBorder className="sul-theme-green" /> By Suluhi
+          </div>
+        </Container>
+      </div>
     </div>
   );
 };
