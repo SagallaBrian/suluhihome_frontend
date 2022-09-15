@@ -62,7 +62,7 @@ const Footer = () => {
       <div className="sul-copyright">
         <Container>
           <div className="py-4">
-            Copyright ©2022 All rights reserved. Made with&nbsp;
+            Copyright ©2022 All rights reserved. Made with &nbsp;
             <MdOutlineFavoriteBorder className="sul-theme-green" /> By Suluhi
           </div>
         </Container>
