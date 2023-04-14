@@ -4,10 +4,12 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 600px;
-  padding-top: 150px;
+  height: 500px;
+  padding-top: 110px;
 }
-
+.mynavbg {
+  background-color: #2f2f2ff3;
+}
 .divcaroa {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../assets/img3.jpg");
@@ -234,4 +236,13 @@
   width: 50px;
   height: 52px;
   border-radius: 50%;
+}
+.smm {
+  background-color: #0d6dfd00;
+}
+
+@media only screen and (max-width: 760px) {
+  .smmm {
+    background-color: #0d6dfd;
+  }
 }

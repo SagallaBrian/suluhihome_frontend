@@ -3,7 +3,6 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
-import { FaPlay } from "react-icons/fa";
 
 const SulCarousel = () => {
   return (
@@ -12,15 +11,7 @@ const SulCarousel = () => {
         <div className="divcaroa">
           <Container>
             <Row>
-              <Col>
-                <div className="relativecontainer">
-                  <span className="btnplayspan"></span>
-                  <Button className="btnplay">
-                    <FaPlay />
-                  </Button>
-                </div>
-              </Col>
-              <Col>
+              <Col md="9">
                 <p>Welcome to Suluhi</p>
                 <h4 className="display-5">
                   We Offer Premium Website Solutions For Your Business.
@@ -54,15 +45,7 @@ const SulCarousel = () => {
         <div className="divcarob">
           <Container>
             <Row>
-              <Col>
-                <div className="relativecontainer">
-                  <span className="btnplayspan"></span>
-                  <Button className="btnplay">
-                    <FaPlay />
-                  </Button>
-                </div>
-              </Col>
-              <Col>
+              <Col md="9">
                 <p>Premium Solutions</p>
                 <h4 className="display-5">
                   Suluhi, Website Application Development Re-Imagined

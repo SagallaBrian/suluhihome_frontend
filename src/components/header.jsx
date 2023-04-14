@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
@@ -14,9 +15,40 @@ const HeaderBlock = ({ title }) => {
   const fonts = {
     fontSize: "15px",
   };
+
+  const [navbar, setNavbar] = useState(false);
+  const [expanded, setExpanded] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 50) {
+      setNavbar(true);
+    } else {
+      setNavbar(false);
+    }
+  };
+  useEffect(() => {
+    changeBackground();
+    // adding the event when scroll change background
+    window.addEventListener("scroll", changeBackground);
+  });
+
+  const handleNavbarToggle = () => {
+    setExpanded((expanded) => !expanded);
+    if (expanded) {
+      setNavbar(true);
+    }
+  };
+
   return (
     <div className="roboto">
-      <Navbar expand="lg" fixed="top">
+      <Navbar
+        expand="lg"
+        fixed="top"
+        className={`my-class ${expanded ? "mynavbg" : ""} 
+         ${navbar ? "mynavbg" : ""}`}
+        expanded={expanded}
+        onToggle={handleNavbarToggle}
+      >
         <Container fluid="lg">
           <Navbar.Brand
             as={Link}
@@ -27,7 +59,10 @@ const HeaderBlock = ({ title }) => {
             {title}
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse className="justify-content-end sul-semibold">
+          <Navbar.Collapse
+            className="justify-content-end sul-semibold"
+            id="basic-navbar-nav"
+          >
             <Nav style={fonts}>
               <Nav.Link
                 as={NavLink}

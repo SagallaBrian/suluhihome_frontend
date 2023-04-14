@@ -3,8 +3,8 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 import { Routes, Route, Navigate } from "react-router-dom";
 
-import HeaderBlock from "./blocks/header";
-import NotFound from "./blocks/notfound";
+import HeaderBlock from "./components/header";
+import NotFound from "./components/notfound";
 import About from "./pages/about/about";
 import Blog from "./pages/blog/blog";
 import Contact from "./pages/contact/contact";
