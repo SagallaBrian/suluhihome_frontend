@@ -21,7 +21,7 @@ const caroData = [
     id: 2,
     divclass: "divcarob",
     startparag: "Premium Solutions",
-    sulheading: "Expert Web Development Services For Your Business Needs",
+    sulheading: "Expert Web  Services For Your Business Needs",
     subheading: `At Suluhi Technology, we offer expert web development services that 
     are tailored to the unique needs of your business. 
     Our team of experienced developers has the skills and 

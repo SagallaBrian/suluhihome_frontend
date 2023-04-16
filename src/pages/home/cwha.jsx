@@ -12,7 +12,7 @@ const Whoweare = () => {
     <div className="roboto py-5">
       <Container>
         <Row>
-          <Col md>
+          <Col lg>
             <div className="whoweareleft">
               <div className="mydiva shadow"></div>
               <div className="mydivb shadow"></div>
@@ -27,7 +27,7 @@ const Whoweare = () => {
               </div>
             </div>
           </Col>
-          <Col md>
+          <Col lg>
             <div className="whoweareright roboto">
               <h5 className="fw-normal text-primary">Welcome to Suluhi</h5>
               <h2 className="py-4">

@@ -100,8 +100,19 @@
   /* background-color: #1d2736; */
 }
 
-.staffone {
+.staffa {
   background-image: url("../../assets/imga.jpg");
+}
+.staffb {
+  background-image: url("../../assets/imgc.jpg");
+}
+.staffc {
+  background-image: url("../../assets/img5.jpg");
+}
+
+.staffa,
+.staffc,
+.staffb {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -109,9 +120,17 @@
   border-radius: 10px 10px 0px 0px;
 }
 
-.singStaffdiv:hover .staffone {
+.singStaffdiv:hover .staffa {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../assets/imga.jpg");
+}
+.singStaffdiv:hover .staffb {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/imgc.jpg");
+}
+.singStaffdiv:hover .staffc {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../assets/img5.jpg");
 }
 
 .padStaff {
@@ -120,6 +139,7 @@
 
 .stafftitle {
   height: 100%;
+  min-height: 200px;
   position: relative;
 }
 
@@ -201,5 +221,16 @@
   .divcaroa,
   .divcarob {
     height: 600px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .mydiva {
+    left: 10%;
+    right: 10%;
+  }
+
+  .mydivb {
+    display: none;
   }
 }

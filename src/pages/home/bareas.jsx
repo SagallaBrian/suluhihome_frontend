@@ -39,7 +39,7 @@ const sulservice = [
 
 const Bareas = () => {
   const myservices = sulservice.map((oneItem) => (
-    <Col md key={oneItem.id}>
+    <Col lg key={oneItem.id}>
       <div className="p-3 bg-white mb-3">
         {oneItem.id === 1 && (
           <MdOutlineLaptop className="display-6 text-info" />
@@ -62,7 +62,7 @@ const Bareas = () => {
       <Container fluid>
         <div className="px-4 py-5">
           <Row>
-            <Col md></Col>
+            <Col className="d-none d-xl-block"></Col>
             {myservices}
           </Row>
         </div>

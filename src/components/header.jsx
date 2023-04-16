@@ -78,7 +78,10 @@ const HeaderBlock = ({ title }) => {
           >
             {title}
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle
+            aria-controls="basic-navbar-nav"
+            className="text-light"
+          />
           <Navbar.Collapse
             className="justify-content-end sul-semibold"
             id="basic-navbar-nav"
