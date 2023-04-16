@@ -9,7 +9,7 @@ const Footer = () => {
       <Container>
         <div className="py-5">
           <Row className="py-5">
-            <Col>
+            <Col md>
               <div className="pk">
                 <h4 className="sul-semibold">Suluhi</h4>
                 <p className="small">
@@ -18,7 +18,7 @@ const Footer = () => {
                 </p>
               </div>
             </Col>
-            <Col>
+            <Col md>
               <div className="pk">
                 <h4 className="sul-semibold">Services</h4>
                 <div className="small py-1">Cloud Computing</div>
@@ -28,7 +28,7 @@ const Footer = () => {
                 <div className="small py-1">Pharmaceutical</div>
               </div>
             </Col>
-            <Col>
+            <Col md>
               <div className="pk">
                 <h4 className="sul-semibold">Community</h4>
                 <div className="small py-1">Stack Overflow</div>
@@ -37,7 +37,7 @@ const Footer = () => {
                 <div className="small py-1">Open Source</div>
               </div>
             </Col>
-            <Col>
+            <Col md>
               <div className="pk">
                 <h4 className="sul-semibold">Social</h4>
                 <div className="small py-1">LinkedIn</div>
@@ -46,7 +46,7 @@ const Footer = () => {
                 <div className="small py-1">YouTube</div>
               </div>
             </Col>
-            <Col>
+            <Col md>
               <div className="pk">
                 <h4 className="sul-semibold">Company</h4>
                 <div className="small py-1">About Us</div>

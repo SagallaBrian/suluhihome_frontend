@@ -5,6 +5,15 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link, NavLink } from "react-router-dom";
 import PropTypes from "prop-types";
 
+const mylinks = [
+  { title: "Home", links: "home", id: 1 },
+  { title: "About Us", links: "about", id: 2 },
+  { title: "Service", links: "service", id: 3 },
+  { title: "Portfolio", links: "portfolio", id: 4 },
+  { title: "Blog", links: "blog", id: 5 },
+  { title: "Contact Us", links: "contact", id: 6 },
+];
+
 const HeaderBlock = ({ title }) => {
   const activeStyle = {
     color: "#08c26b",
@@ -16,6 +25,17 @@ const HeaderBlock = ({ title }) => {
     fontSize: "15px",
   };
 
+  const mynavl = mylinks.map((mylink) => (
+    <Nav.Link
+      key={mylink.id}
+      as={NavLink}
+      to={mylink.links}
+      className="pe-3"
+      style={({ isActive }) => (isActive ? activeStyle : navClor)}
+    >
+      {mylink.title}
+    </Nav.Link>
+  ));
   const [navbar, setNavbar] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
@@ -63,55 +83,7 @@ const HeaderBlock = ({ title }) => {
             className="justify-content-end sul-semibold"
             id="basic-navbar-nav"
           >
-            <Nav style={fonts}>
-              <Nav.Link
-                as={NavLink}
-                to="home"
-                className="pe-3"
-                style={({ isActive }) => (isActive ? activeStyle : navClor)}
-              >
-                Home
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="about"
-                className="pe-3"
-                style={({ isActive }) => (isActive ? activeStyle : navClor)}
-              >
-                About Us
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="service"
-                className="pe-3"
-                style={({ isActive }) => (isActive ? activeStyle : navClor)}
-              >
-                Service
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="portfolio"
-                className="pe-3"
-                style={({ isActive }) => (isActive ? activeStyle : navClor)}
-              >
-                Portfolio
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="blog"
-                className="pe-3"
-                style={({ isActive }) => (isActive ? activeStyle : navClor)}
-              >
-                Blog
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="contact"
-                style={({ isActive }) => (isActive ? activeStyle : navClor)}
-              >
-                Contact Us
-              </Nav.Link>
-            </Nav>
+            <Nav style={fonts}>{mynavl}</Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

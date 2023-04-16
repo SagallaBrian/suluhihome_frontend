@@ -12,22 +12,22 @@ const Testimonial = () => {
         <div className="py-5">
           <div className="py-3">
             <Row>
-              <Col></Col>
-              <Col>
+              <Col md></Col>
+              <Col md>
                 <div className="text-white">
                   <div className="small">Testimonials</div>
                   <h4 className="sul-semibold">What the Clients Say </h4>
                 </div>
               </Col>
-              <Col></Col>
-              <Col></Col>
-              <Col></Col>
+              <Col md></Col>
+              <Col md></Col>
+              <Col md></Col>
             </Row>
           </div>
 
           <Row>
-            <Col></Col>
-            <Col>
+            <Col md></Col>
+            <Col md>
               <div className="p-3 py-4 bg-white rounded shadow">
                 <div className="sul-theme-green">
                   <MdGrade />
@@ -53,7 +53,7 @@ const Testimonial = () => {
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col md>
               <div className="p-3 py-4 bg-white rounded shadow">
                 <div className="sul-theme-green">
                   <MdGrade />
@@ -79,7 +79,7 @@ const Testimonial = () => {
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col md>
               <div className="p-3 py-4 bg-white rounded shadow">
                 <div className="sul-theme-green">
                   <MdGrade />
@@ -105,7 +105,7 @@ const Testimonial = () => {
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col md>
               <div className="p-3 py-4 bg-white rounded shadow">
                 <div className="sul-theme-green">
                   <MdGrade />

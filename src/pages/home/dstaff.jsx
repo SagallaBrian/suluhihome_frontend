@@ -7,7 +7,7 @@ const Ourstaff = () => {
       <Container>
         <div className="padStaff">
           <Row>
-            <Col>
+            <Col md>
               <div className="stafftitle">
                 <div className="staftinner">
                   <div>Team & Staff</div>
@@ -27,7 +27,7 @@ const Ourstaff = () => {
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col md>
               <div className="singStaffdiv text-center">
                 <div className="staffone"></div>
                 <div className="p-4">
@@ -50,7 +50,7 @@ const Ourstaff = () => {
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col md>
               <div className="singStaffdiv text-center">
                 <div className="staffone"></div>
                 <div className="p-4">
@@ -73,7 +73,7 @@ const Ourstaff = () => {
                 </div>
               </div>
             </Col>
-            <Col>
+            <Col md>
               <div className="singStaffdiv text-center">
                 <div className="staffone"></div>
                 <div className="p-4">

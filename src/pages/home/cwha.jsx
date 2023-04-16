@@ -12,7 +12,7 @@ const Whoweare = () => {
     <div className="roboto py-5">
       <Container>
         <Row>
-          <Col>
+          <Col md>
             <div className="whoweareleft">
               <div className="mydiva shadow"></div>
               <div className="mydivb shadow"></div>
@@ -27,21 +27,24 @@ const Whoweare = () => {
               </div>
             </div>
           </Col>
-          <Col>
+          <Col md>
             <div className="whoweareright roboto">
               <h5 className="fw-normal text-primary">Welcome to Suluhi</h5>
               <h2 className="py-4">
                 We are A Web Application Development Company
               </h2>
               <p className="p_fonts text-secondary">
-                Suluhi Technology is an ERP solution provider to the customer
-                offering proprietary enterprise softwares based on
-                subscriptions. These are business management information
-                softwares focusing on small and medium scale enterprises. The
-                objective of the company is to automate key functions like
-                accounting, human resource, sales, and operations performed by
-                the business. Therefore, allow them to focus on the most
-                essential aspects of their business.
+                At Suluhi Technology, we are a team of passionate and talented
+                web developers who are dedicated to helping businesses succeed
+                online. We specialize in developing custom web solutions that
+                are tailored to the unique needs of our clients, whether it's a
+                simple website or a complex web application.
+              </p>
+              <p className="p_fonts text-secondary">
+                If you're looking for a web development partner who can help
+                your business succeed online, look no further than Suluhi
+                Technology. Contact us today to learn more about our services
+                and how we can help your business grow.
               </p>
               <div className="row py-2">
                 <div className="col-lg-3"></div>

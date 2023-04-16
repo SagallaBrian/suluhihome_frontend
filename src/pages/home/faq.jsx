@@ -9,7 +9,7 @@ const Faq = () => {
     <Container>
       <div className="py-5">
         <Row>
-          <Col>
+          <Col md>
             <div className="py-2">
               <img src={faqimg} alt="No FAQ" className="img-fluid " />
             </div>
@@ -27,7 +27,7 @@ const Faq = () => {
               </p>
             </div>
           </Col>
-          <Col>
+          <Col md>
             <div className="m">
               <div className="">
                 <div className="text-primary small pt-5">Get Answers</div>

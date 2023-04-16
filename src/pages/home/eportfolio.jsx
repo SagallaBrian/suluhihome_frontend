@@ -10,7 +10,7 @@ const Portfolio = () => {
           <Row className="justify-content-md-center">
             <Col lg="10">
               <Row className="pt-4 text-white text-start">
-                <Col>
+                <Col md>
                   <div className="portfo1">
                     <div className="innerPort p-3">
                       <div className="sul-theme-green">MIS</div>
@@ -20,7 +20,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </Col>
-                <Col>
+                <Col md>
                   <div className="portfo2">
                     <div className="innerPort p-3">
                       <div className="sul-theme-green">Development</div>
@@ -28,7 +28,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </Col>
-                <Col>
+                <Col md>
                   <div className="portfo3">
                     <div className="innerPort p-3">
                       <div className="sul-theme-green">Development</div>
@@ -38,7 +38,7 @@ const Portfolio = () => {
                 </Col>
               </Row>
               <Row className="pt-4 text-white text-start">
-                <Col>
+                <Col md>
                   <div className="portfo4">
                     <div className="innerPort p-3">
                       <div className="sul-theme-green">Development</div>
@@ -48,7 +48,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </Col>
-                <Col>
+                <Col md>
                   <div className="portfo6">
                     <div className="innerPort p-3">
                       <div className="sul-theme-green">MIS</div>
@@ -56,7 +56,7 @@ const Portfolio = () => {
                     </div>
                   </div>
                 </Col>
-                <Col>
+                <Col md>
                   <div className="portfo5">
                     <div className="innerPort p-3">
                       <div className="sul-theme-green">MIS</div>
