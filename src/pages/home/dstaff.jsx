@@ -1,7 +1,7 @@
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { FaLinkedin, FaGithub, FaSkype, FaSlack } from "react-icons/fa";
 
-const staff = [
+const staffs = [
   {
     id: 1,
     name: "Brian Sagalla",
@@ -38,7 +38,7 @@ const staff = [
 ];
 
 const Ourstaff = () => {
-  const mystaff = staff.map((oneStaff) => (
+  const renderedStaff = staffs.map((oneStaff) => (
     <Col lg key={oneStaff.id}>
       <div className="singStaffdiv text-center mb-3">
         <div className={oneStaff.divs}></div>
@@ -87,7 +87,7 @@ const Ourstaff = () => {
                 </div>
               </div>
             </Col>
-            {mystaff}
+            {renderedStaff}
           </Row>
         </div>
       </Container>

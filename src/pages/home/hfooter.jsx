@@ -1,14 +1,70 @@
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { MdOutlineFavoriteBorder } from "react-icons/md";
+
+const footerItems = [
+  {
+    id: 1,
+    headings: "Services",
+    links: [
+      { name: "Web Apps", link: "" },
+      { name: "CMS", link: "" },
+      { name: "UX & UI Design", link: "" },
+      { name: "E-commerce", link: "" },
+    ],
+  },
+  {
+    id: 3,
+    headings: "Get In Touch",
+    links: [
+      { name: "Contact Us", link: "" },
+      { name: "Blog", link: "" },
+      { name: "Careers", link: "" },
+      { name: "FAQs", link: "" },
+    ],
+  },
+  {
+    id: 2,
+    headings: "Social media",
+    links: [
+      { name: "GitHub", link: "https://github.com/SagallaBrian" },
+      {
+        name: "LinkedIn",
+        link: "https://www.linkedin.com/in/brian-sagalla-7a8764117/",
+      },
+      { name: "Twitter", link: "" },
+      { name: "YouTube", link: "" },
+    ],
+  },
+  {
+    id: 4,
+    headings: "Community",
+    links: [
+      { name: "Slack", link: "" },
+      { name: "GitHub", link: "" },
+      { name: "Zoom", link: "" },
+      { name: "Teams", link: "" },
+    ],
+  },
+];
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+  const renderedItems = footerItems.map((item) => (
+    <Col md key={item.id}>
+      <div className="pk">
+        <h5 className="sul-semibold">{item.headings}</h5>
+        {item.links.map((link) => (
+          <div className="p_fonts py-1">{link.name}</div>
+        ))}
+      </div>
+    </Col>
+  ));
   return (
     <div className="sul-footer ">
       <Container>
-        <div className="py-5">
-          <Row className="py-5">
+        <div className="pt-5 pb-2">
+          <Row className="py-2">
             <Col md>
               <div className="pk">
                 <h4 className="sul-semibold">Suluhi</h4>
@@ -18,52 +74,14 @@ const Footer = () => {
                 </p>
               </div>
             </Col>
-            <Col md>
-              <div className="pk">
-                <h4 className="sul-semibold">Services</h4>
-                <div className="small py-1">Cloud Computing</div>
-                <div className="small py-1">Accounting</div>
-                <div className="small py-1">Portfolio Websites</div>
-                <div className="small py-1">E-commerce</div>
-                <div className="small py-1">Pharmaceutical</div>
-              </div>
-            </Col>
-            <Col md>
-              <div className="pk">
-                <h4 className="sul-semibold">Community</h4>
-                <div className="small py-1">Stack Overflow</div>
-                <div className="small py-1">GitHub</div>
-                <div className="small py-1">Slack</div>
-                <div className="small py-1">Open Source</div>
-              </div>
-            </Col>
-            <Col md>
-              <div className="pk">
-                <h4 className="sul-semibold">Social</h4>
-                <div className="small py-1">LinkedIn</div>
-                <div className="small py-1">Twitter</div>
-                <div className="small py-1">Facebook</div>
-                <div className="small py-1">YouTube</div>
-              </div>
-            </Col>
-            <Col md>
-              <div className="pk">
-                <h4 className="sul-semibold">Company</h4>
-                <div className="small py-1">About Us</div>
-                <div className="small py-1">Contact</div>
-                <div className="small py-1">Blog</div>
-                <div className="small py-1">Partners</div>
-                <div className="small py-1">Career</div>
-              </div>
-            </Col>
+            {renderedItems}
           </Row>
         </div>
       </Container>
       <div className="sul-copyright">
         <Container>
           <div className="py-4">
-            Copyright ©2022 All rights reserved. Made with &nbsp;
-            <MdOutlineFavoriteBorder className="sul-theme-green" /> By Suluhi
+            Copyright ©{currentYear} All rights reserved.
           </div>
         </Container>
       </div>

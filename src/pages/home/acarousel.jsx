@@ -4,7 +4,7 @@ import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 
-const caroData = [
+const banners = [
   {
     id: 1,
     divclass: "divcaroa",
@@ -32,15 +32,15 @@ const caroData = [
 ];
 
 const SulCarousel = () => {
-  const mycaro = caroData.map((oneItem) => (
-    <Carousel.Item key={oneItem.id}>
-      <div className={oneItem.divclass}>
+  const renderedBanner = banners.map((banner) => (
+    <Carousel.Item key={banner.id}>
+      <div className={banner.divclass}>
         <Container>
           <Row>
             <Col md="9">
-              <p>{oneItem.startparag}</p>
-              <h4 className="display-5">{oneItem.sulheading}</h4>
-              <p>{oneItem.subheading}</p>
+              <p>{banner.startparag}</p>
+              <h4 className="display-5">{banner.sulheading}</h4>
+              <p>{banner.subheading}</p>
               <div className="pt-3">
                 <Button
                   variant="primary"
@@ -64,7 +64,7 @@ const SulCarousel = () => {
   ));
   return (
     <Carousel fade className="text-white roboto" controls={false}>
-      {mycaro}
+      {renderedBanner}
     </Carousel>
   );
 };

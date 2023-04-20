@@ -8,7 +8,7 @@ import {
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-const sulservice = [
+const services = [
   {
     id: 1,
     icons: MdOutlineLaptop,
@@ -41,14 +41,14 @@ const sulservice = [
 ];
 
 const Bareas = () => {
-  const myservices = sulservice.map((oneItem) => {
-    const Icon = oneItem.icons;
+  const renderedServices = services.map((service) => {
+    const Icon = service.icons;
     return (
-      <Col lg key={oneItem.id}>
+      <Col lg key={service.id}>
         <div className="p-3 bg-white mb-3">
           <Icon className="display-6 text-info" />
-          <h5 className="roboto fw-normal">{oneItem.headers}</h5>
-          <p className="p_fonts text-secondary">{oneItem.descrip}</p>
+          <h5 className="roboto fw-normal">{service.headers}</h5>
+          <p className="p_fonts text-secondary">{service.descrip}</p>
         </div>
       </Col>
     );
@@ -60,7 +60,7 @@ const Bareas = () => {
         <div className="px-4 py-5">
           <Row>
             <Col className="d-none d-xl-block"></Col>
-            {myservices}
+            {renderedServices}
           </Row>
         </div>
       </Container>

@@ -42,7 +42,7 @@ const faqs = [
   },
 ];
 const Faq = () => {
-  const myfaqs = faqs.map((oneFaq, ind) => (
+  const renderedFaqs = faqs.map((oneFaq, ind) => (
     <Accordion.Item eventKey={`${ind}`} key={oneFaq.id}>
       <Accordion.Header>{oneFaq.question}</Accordion.Header>
       <Accordion.Body className="small text-secondary">
@@ -80,7 +80,7 @@ const Faq = () => {
                   <h4>Frequently Ask Question</h4>
                 </div>
                 <div className="pt-3">
-                  <Accordion defaultActiveKey="0">{myfaqs}</Accordion>
+                  <Accordion defaultActiveKey="0">{renderedFaqs}</Accordion>
                 </div>
               </div>
             </div>

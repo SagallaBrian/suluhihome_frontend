@@ -25,7 +25,7 @@ const HeaderBlock = ({ title }) => {
     fontSize: "15px",
   };
 
-  const mynavl = mylinks.map((mylink) => (
+  const renderedLinks = mylinks.map((mylink) => (
     <Nav.Link
       key={mylink.id}
       as={NavLink}
@@ -86,7 +86,7 @@ const HeaderBlock = ({ title }) => {
             className="justify-content-end sul-semibold"
             id="basic-navbar-nav"
           >
-            <Nav style={fonts}>{mynavl}</Nav>
+            <Nav style={fonts}>{renderedLinks}</Nav>
           </Navbar.Collapse>
         </Container>
       </Navbar>

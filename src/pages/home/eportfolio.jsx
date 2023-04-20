@@ -1,6 +1,6 @@
 import { Col, Container, Row } from "react-bootstrap";
 
-const myport = [
+const portfolios = [
   {
     id: 1,
     category: "CMS",
@@ -39,7 +39,7 @@ const myport = [
   },
 ];
 const Portfolio = () => {
-  const portfol = myport.map((onePort) => (
+  const renderedportfolio = portfolios.map((onePort) => (
     <Col md={4} key={onePort.id}>
       <div className={`${onePort.imgbackg} mb-3`}>
         <div className="innerPort p-3">
@@ -57,7 +57,9 @@ const Portfolio = () => {
           <h3 className="fw-normal">Our Exceptional Work</h3>
           <Row className="justify-content-md-center">
             <Col lg="10">
-              <Row className="pt-4 text-white text-start">{portfol}</Row>
+              <Row className="pt-4 text-white text-start">
+                {renderedportfolio}
+              </Row>
             </Col>
           </Row>
         </div>

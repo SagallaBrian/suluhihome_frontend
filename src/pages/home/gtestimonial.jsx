@@ -5,7 +5,7 @@ import { MdGrade } from "react-icons/md";
 
 import avatar from "../../assets/avatar.jpg";
 
-const testim = [
+const testimonies = [
   {
     id: 1,
     ratin: 4,
@@ -50,7 +50,7 @@ const testim = [
 ];
 
 const Testimonial = () => {
-  const mytestimonials = testim.map((oneMonial) => (
+  const renderedtestimonies = testimonies.map((oneMonial) => (
     <Col lg key={oneMonial.id}>
       <div className="p-3 py-4 bg-white rounded shadow mb-3">
         <div className="sul-theme-green">
@@ -93,7 +93,7 @@ const Testimonial = () => {
 
           <Row>
             <Col lg className="d-none d-xl-block"></Col>
-            {mytestimonials}
+            {renderedtestimonies}
           </Row>
           <div className="py-4"></div>
         </div>
