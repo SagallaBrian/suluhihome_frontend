@@ -14,7 +14,7 @@ const footerItems = [
     ],
   },
   {
-    id: 3,
+    id: 2,
     headings: "Get In Touch",
     links: [
       { name: "Contact Us", link: "" },
@@ -24,7 +24,7 @@ const footerItems = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     headings: "Social media",
     links: [
       {
@@ -53,8 +53,10 @@ const Footer = () => {
     <Col md key={item.id}>
       <div className="pk mb-3">
         <h5 className="sul-semibold">{item.headings}</h5>
-        {item.links.map((link) => (
-          <div className="p_fonts py-1">{link.name}</div>
+        {item.links.map((link, ind) => (
+          <div className="p_fonts py-1" key={ind}>
+            {link.name}
+          </div>
         ))}
       </div>
     </Col>

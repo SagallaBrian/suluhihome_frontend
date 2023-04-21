@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import { MdGrade } from "react-icons/md";
 
-import avatar from "../../assets/avatar.jpg";
+import avatar from "../../../assets/avatar.jpg";
 
 const testimonies = [
   {

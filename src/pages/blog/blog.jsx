@@ -1,7 +1,14 @@
+import BannerSection from "../../components/banner";
+
 const Blog = () => {
+  const bannerInfo = {
+    name: "Blog",
+    class: "blog",
+  };
+
   return (
-    <div>
-      <p>Blog Page</p>
+    <div className="roboto">
+      <BannerSection bannerInfo={bannerInfo} />
     </div>
   );
 };

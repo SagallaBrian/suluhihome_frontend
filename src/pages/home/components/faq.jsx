@@ -2,7 +2,7 @@ import Container from "react-bootstrap/Container";
 import Accordion from "react-bootstrap/Accordion";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import faqimg from "../../assets/img1.jpg";
+import faqimg from "../../../assets/img1.jpg";
 const faqs = [
   {
     id: 1,

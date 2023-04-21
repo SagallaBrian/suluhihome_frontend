@@ -1,7 +1,14 @@
+import BannerSection from "../../components/banner";
+
 const Portfolio = () => {
+  const bannerInfo = {
+    name: "Porfolio",
+    class: "porfolio",
+  };
+
   return (
-    <div>
-      <p>Portfolio Page</p>
+    <div className="roboto">
+      <BannerSection bannerInfo={bannerInfo} />
     </div>
   );
 };
