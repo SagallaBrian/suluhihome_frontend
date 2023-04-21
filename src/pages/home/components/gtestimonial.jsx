@@ -81,8 +81,8 @@ const Testimonial = () => {
               <Col lg className="d-none d-xl-block"></Col>
               <Col lg>
                 <div className="text-white">
-                  <div className="small">Testimonials</div>
-                  <h4 className="sul-semibold">What the Clients Say </h4>
+                  <h2 className="sul-h3">Testimonials</h2>
+                  <h3 className="sul-h2">What Clients Say </h3>
                 </div>
               </Col>
               <Col lg></Col>

@@ -71,19 +71,19 @@ const Ourstaff = () => {
             <Col md>
               <div className="stafftitle">
                 <div className="staftinner">
-                  <div>Team & Staff</div>
-                  <h4>Our Team </h4>
+                  <h1 className="sul-h3">Team & Staff</h1>
+                  <h2 className="sul-h2">Our Team </h2>
                   <p className="sul-small">
                     At Suluhi Technology, we have a team of talented and
                     experienced professionals who are passionate about web
                     development and helping businesses succeed online.
                   </p>
-                  <Button
+                  {/* <Button
                     size="sm"
                     className="p-2 text-uppercase fw-bold getintouch"
                   >
                     View All Staff
-                  </Button>
+                  </Button> */}
                 </div>
               </div>
             </Col>

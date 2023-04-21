@@ -3,6 +3,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const banners = [
   {
@@ -42,19 +43,23 @@ const SulCarousel = () => {
               <h4 className="display-5">{banner.sulheading}</h4>
               <p>{banner.subheading}</p>
               <div className="pt-3">
-                <Button
-                  variant="primary"
-                  size="sm"
-                  className="me-2 btnview text-uppercase"
-                >
-                  Learn More
-                </Button>
-                <Button
-                  size="sm"
-                  className="bg-white text-dark border-white text-uppercase btnview"
-                >
-                  View Portfolio
-                </Button>
+                <Link to="/about">
+                  <Button
+                    variant="primary"
+                    size="sm"
+                    className="me-2 btnview text-uppercase"
+                  >
+                    Learn More
+                  </Button>
+                </Link>
+                <Link to="/portfolio">
+                  <Button
+                    size="sm"
+                    className="bg-white text-dark border-white text-uppercase btnview"
+                  >
+                    View Portfolio
+                  </Button>
+                </Link>
               </div>
             </Col>
           </Row>

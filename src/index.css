@@ -6,19 +6,19 @@ body,
 }
 
 .sul-theme-green {
-  color: #28df99;
+  color: #28df99 !important;
 }
 
 .sul-theme-green-bg {
-  background-color: #28df99;
+  background-color: #28df99 !important;
 }
 
 .sul-theme-blue {
-  color: #6452e8;
+  color: #6452e8 !important;
 }
 
 .sul-theme-blue-bg {
-  background-color: #6452e8;
+  background-color: #6452e8 !important;
 }
 
 .sul-theme-dark {
@@ -29,12 +29,32 @@ body,
   background-color: #6c6c6c;
 }
 
+.sul-black {
+  color: #404040;
+}
 .sul-footer {
   background-color: #111e45;
   color: #d3d1d1;
 }
 
 /*FONT SIZES*/
+.sul-h1 {
+  font-size: large;
+}
+
+.sul-h2 {
+  font-size: 1.8rem !important;
+  font-weight: 500 !important;
+  padding: 4px 0px !important;
+  margin: 0px !important;
+}
+
+.sul-h3 {
+  font-size: 1.3rem !important;
+  font-weight: 400;
+  padding: 4px 0px !important;
+  margin: 0px !important;
+}
 
 .sul-small {
   font-size: 0.86rem !important;

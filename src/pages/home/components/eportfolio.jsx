@@ -53,8 +53,8 @@ const Portfolio = () => {
     <div>
       <Container fluid="lg">
         <div className="text-center porfConta">
-          <div className="py-3 text-primary">Recent Portfolio</div>
-          <h3 className="fw-normal">Our Exceptional Work</h3>
+          <h2 className="sul-h3 sul-theme-blue">Recent Portfolio</h2>
+          <h3 className="sul-h2 sul-black">Our Exceptional Work</h3>
           <Row className="justify-content-md-center">
             <Col lg="10">
               <Row className="pt-4 text-white text-start">

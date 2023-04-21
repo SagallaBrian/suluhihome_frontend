@@ -46,8 +46,8 @@ const Bareas = () => {
     return (
       <Col lg key={service.id}>
         <div className="p-3 bg-white mb-3">
-          <Icon className="display-6 text-info" />
-          <h5 className="roboto fw-normal">{service.headers}</h5>
+          <Icon className="display-5 text-info" />
+          <h2 className="sul-h3">{service.headers}</h2>
           <p className="sul-small text-secondary">{service.descrip}</p>
         </div>
       </Col>

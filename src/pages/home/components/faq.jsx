@@ -59,12 +59,14 @@ const Faq = () => {
               <img src={faqimg} alt="No FAQ" className="img-fluid " />
             </div>
             <div className="py-2 px-1">
-              <h4 className="mel-semibold text-primary">
+              <h4 className="sul-h2 sul-black">
                 Why Choose us For Your Next Project ?
               </h4>
             </div>
             <div className="my-2 shadow  rounded p-3">
-              <h5 className="sul-dark">App Development Re-Imagined</h5>
+              <h5 className="sul-theme-blue sul-h3">
+                App Development Re-Imagined
+              </h5>
               <p className="sul-small text-secondary">
                 We provide elegantly designed portfolio websites. This is
                 guaranteed by our team of expert developers and designers who
@@ -74,11 +76,9 @@ const Faq = () => {
           </Col>
           <Col md>
             <div className="m">
-              <div className="">
-                <div className="text-primary small pt-5">Get Answers</div>
-                <div className="py-3 sul-dark">
-                  <h4>Frequently Ask Question</h4>
-                </div>
+              <div className="pt-3 pt-lg-5">
+                <h3 className="sul-theme-blue sul-h3">Get Answers</h3>
+                <h2 className="sul-h2 sul-black">Frequently Ask Question</h2>
                 <div className="pt-3">
                   <Accordion defaultActiveKey="0">{renderedFaqs}</Accordion>
                 </div>

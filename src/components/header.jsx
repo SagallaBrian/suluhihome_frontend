@@ -49,7 +49,7 @@ const HeaderBlock = ({ title }) => {
   };
 
   const closeNavbar = () => {
-    setExpanded((expanded) => !expanded);
+    setExpanded(false);
   };
 
   const renderedLinks = mylinks.map((mylink) => (

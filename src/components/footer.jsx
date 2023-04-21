@@ -68,7 +68,7 @@ const FooterBlock = () => {
           <Row className="py-2">
             <Col md>
               <div className="pk">
-                <h4 className="sul-semibold">Suluhi</h4>
+                <h1 className="sul-h2">Suluhi</h1>
                 <p className="sul-small">
                   Founded in 2015, our team of experienced developers,
                   designers, and project managers is dedicated to delivering

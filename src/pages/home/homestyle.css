@@ -21,7 +21,7 @@
 }
 
 .btnview {
-  font-weight: 400 !important;
+  font-weight: 500 !important;
   font-size: 11px !important;
 }
 
@@ -35,10 +35,6 @@
   position: relative;
   height: 100%;
   /* background-color: aqua; */
-}
-
-.p_fonts {
-  font-size: 0.87rem !important;
 }
 
 .whoweareright {
