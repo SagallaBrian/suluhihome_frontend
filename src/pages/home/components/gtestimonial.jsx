@@ -58,13 +58,13 @@ const Testimonial = () => {
             <MdGrade key={i} />
           ))}
         </div>
-        <div className="text-secondary small py-3">{oneMonial.remarks}</div>
+        <div className="text-secondary sul-small py-3">{oneMonial.remarks}</div>
 
         <div className="d-flex align-items-center py-2">
           <div className="pe-2">
             <img src={avatar} alt="" className="customer-image" />
           </div>
-          <div className="small lh-sm ">
+          <div className="sul-small lh-sm ">
             <div className="sul-theme-blue">{oneMonial.name}</div>
             <div className="sul-theme-green">{oneMonial.company}</div>
           </div>

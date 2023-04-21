@@ -22,20 +22,9 @@ const HeaderBlock = ({ title }) => {
     color: "#fbfbfb",
   };
   const fonts = {
-    fontSize: "15px",
+    fontSize: "0.9rem",
   };
 
-  const renderedLinks = mylinks.map((mylink) => (
-    <Nav.Link
-      key={mylink.id}
-      as={NavLink}
-      to={mylink.links}
-      className="pe-3"
-      style={({ isActive }) => (isActive ? activeStyle : navClor)}
-    >
-      {mylink.title}
-    </Nav.Link>
-  ));
   const [navbar, setNavbar] = useState(false);
   const [expanded, setExpanded] = useState(false);
 
@@ -58,6 +47,23 @@ const HeaderBlock = ({ title }) => {
       setNavbar(true);
     }
   };
+
+  const closeNavbar = () => {
+    setExpanded((expanded) => !expanded);
+  };
+
+  const renderedLinks = mylinks.map((mylink) => (
+    <Nav.Link
+      key={mylink.id}
+      as={NavLink}
+      to={mylink.links}
+      className="pe-3"
+      style={({ isActive }) => (isActive ? activeStyle : navClor)}
+      onClick={closeNavbar}
+    >
+      {mylink.title}
+    </Nav.Link>
+  ));
 
   return (
     <div className="roboto">

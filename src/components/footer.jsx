@@ -54,7 +54,7 @@ const FooterBlock = () => {
       <div className="pk mb-3">
         <h5 className="sul-semibold">{item.headings}</h5>
         {item.links.map((link, ind) => (
-          <div className="p_fonts py-1" key={ind}>
+          <div className="sul-small py-1" key={ind}>
             {link.name}
           </div>
         ))}
@@ -69,7 +69,7 @@ const FooterBlock = () => {
             <Col md>
               <div className="pk">
                 <h4 className="sul-semibold">Suluhi</h4>
-                <p className="small">
+                <p className="sul-small">
                   Founded in 2015, our team of experienced developers,
                   designers, and project managers is dedicated to delivering
                   high-quality web applications that help our clients achieve
@@ -83,7 +83,7 @@ const FooterBlock = () => {
       </Container>
       <div className="sul-copyright">
         <Container fluid="lg">
-          <div className="py-4">
+          <div className="py-4 sul-small">
             Copyright ©{currentYear} All rights reserved.
           </div>
         </Container>

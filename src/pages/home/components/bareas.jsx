@@ -48,7 +48,7 @@ const Bareas = () => {
         <div className="p-3 bg-white mb-3">
           <Icon className="display-6 text-info" />
           <h5 className="roboto fw-normal">{service.headers}</h5>
-          <p className="p_fonts text-secondary">{service.descrip}</p>
+          <p className="sul-small text-secondary">{service.descrip}</p>
         </div>
       </Col>
     );

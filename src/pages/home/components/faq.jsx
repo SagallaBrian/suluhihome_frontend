@@ -45,7 +45,7 @@ const Faq = () => {
   const renderedFaqs = faqs.map((oneFaq, ind) => (
     <Accordion.Item eventKey={`${ind}`} key={oneFaq.id}>
       <Accordion.Header>{oneFaq.question}</Accordion.Header>
-      <Accordion.Body className="small text-secondary">
+      <Accordion.Body className="sul-small text-secondary">
         {oneFaq.answer}
       </Accordion.Body>
     </Accordion.Item>
@@ -65,7 +65,7 @@ const Faq = () => {
             </div>
             <div className="my-2 shadow  rounded p-3">
               <h5 className="sul-dark">App Development Re-Imagined</h5>
-              <p className="small text-secondary">
+              <p className="sul-small text-secondary">
                 We provide elegantly designed portfolio websites. This is
                 guaranteed by our team of expert developers and designers who
                 work tirelessly in providing seamless products to the customers

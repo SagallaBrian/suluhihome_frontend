@@ -6,7 +6,7 @@ const BannerSection = ({ bannerInfo }) => {
     <div className={bannerInfo.class}>
       <Container fluid="lg">
         <div className="banner-cont">
-          <div className="banner">{bannerInfo.name}</div>
+          <div className="banner display-5">{bannerInfo.name}</div>
         </div>
       </Container>
     </div>

@@ -73,7 +73,7 @@ const Ourstaff = () => {
                 <div className="staftinner">
                   <div>Team & Staff</div>
                   <h4>Our Team </h4>
-                  <p className="p_fonts">
+                  <p className="sul-small">
                     At Suluhi Technology, we have a team of talented and
                     experienced professionals who are passionate about web
                     development and helping businesses succeed online.

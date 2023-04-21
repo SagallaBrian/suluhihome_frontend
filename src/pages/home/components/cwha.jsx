@@ -33,14 +33,14 @@ const Whoweare = () => {
               <h2 className="py-4">
                 We are A Web Application Development Company
               </h2>
-              <p className="p_fonts text-secondary">
+              <p className="sul-small text-secondary">
                 At Suluhi Technology, we are a team of passionate and talented
                 web developers who are dedicated to helping businesses succeed
                 online. We specialize in developing custom web solutions that
                 are tailored to the unique needs of our clients, whether it's a
                 simple website or a complex web application.
               </p>
-              <p className="p_fonts text-secondary">
+              <p className="sul-small text-secondary">
                 If you're looking for a web development partner who can help
                 your business succeed online, look no further than Suluhi
                 Technology. Contact us today to learn more about our services

@@ -1,23 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,300&display=swap");
-body {
-  /* font-family: 'DM Sans', sans-serif; */
-
-  font-family: "Roboto", sans-serif;
-}
-
-.sul-semibold {
-  font-weight: 500 !important;
-}
-
-.custom-light {
-  font-weight: 300 !important;
-}
-
-.sul-normal {
-  font-weight: 400 !important;
-}
-
+body,
 .roboto {
+  /* font-family: 'DM Sans', sans-serif; */
   font-family: "Roboto", sans-serif !important;
 }
 
@@ -48,4 +32,23 @@ body {
 .sul-footer {
   background-color: #111e45;
   color: #d3d1d1;
+}
+
+/*FONT SIZES*/
+
+.sul-small {
+  font-size: 0.86rem !important;
+}
+
+/*FONT WEIGHT*/
+.sul-semibold {
+  font-weight: 500 !important;
+}
+
+.custom-light {
+  font-weight: 300 !important;
+}
+
+.sul-normal {
+  font-weight: 400 !important;
 }

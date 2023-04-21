@@ -1,0 +1,12 @@
+.diva {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 300px;
+  position: relative;
+  border-radius: 7px;
+}
+
+.diva {
+  background-image: url("../../assets/imgg.jpg");
+}

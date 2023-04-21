@@ -1,5 +1,6 @@
 import BannerSection from "../../components/banner";
 import AboutSeca from "./components/absectiona";
+import "./aboutstyle.css";
 
 const About = () => {
   const bannerInfo = {
