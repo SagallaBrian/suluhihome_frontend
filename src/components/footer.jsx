@@ -47,7 +47,7 @@ const footerItems = [
   },
 ];
 
-const Footer = () => {
+const FooterBlock = () => {
   const currentYear = new Date().getFullYear();
   const renderedItems = footerItems.map((item) => (
     <Col md key={item.id}>
@@ -62,7 +62,7 @@ const Footer = () => {
     </Col>
   ));
   return (
-    <div className="sul-footer ">
+    <div className="sul-footer roboto">
       <Container fluid="lg">
         <div className="pt-5 pb-2">
           <Row className="py-2">
@@ -70,8 +70,10 @@ const Footer = () => {
               <div className="pk">
                 <h4 className="sul-semibold">Suluhi</h4>
                 <p className="small">
-                  Suluhi Technology exists to help business run effectively and
-                  hence better sustainable endeavors
+                  Founded in 2015, our team of experienced developers,
+                  designers, and project managers is dedicated to delivering
+                  high-quality web applications that help our clients achieve
+                  their goals.
                 </p>
               </div>
             </Col>
@@ -90,4 +92,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default FooterBlock;

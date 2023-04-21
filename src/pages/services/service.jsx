@@ -2,7 +2,7 @@ import BannerSection from "../../components/banner";
 
 const Service = () => {
   const bannerInfo = {
-    name: "Service",
+    name: "Service is Under Maintenance. We will update Soon!!",
     class: "service",
   };
 

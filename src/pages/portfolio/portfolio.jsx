@@ -2,7 +2,7 @@ import BannerSection from "../../components/banner";
 
 const Portfolio = () => {
   const bannerInfo = {
-    name: "Porfolio",
+    name: "Portfolio is Under Maintenance. We will update Soon!!",
     class: "porfolio",
   };
 

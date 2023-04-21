@@ -1,4 +1,3 @@
-import Footer from "../../components/footer";
 import SulCarousel from "./components/acarousel";
 import Bareas from "./components/bareas";
 import Whoweare from "./components/cwha";
@@ -18,7 +17,6 @@ const Home = () => {
       <Portfolio />
       <Faq />
       <Testimonial />
-      <Footer />
     </div>
   );
 };

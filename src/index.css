@@ -44,3 +44,8 @@ body {
 .sul-theme-dark-bg {
   background-color: #6c6c6c;
 }
+
+.sul-footer {
+  background-color: #111e45;
+  color: #d3d1d1;
+}

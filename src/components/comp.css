@@ -6,8 +6,6 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 500px;
-  padding-top: 110px;
   position: relative;
 }
 .about {
@@ -16,11 +14,11 @@
 }
 .service {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/img2.jpg");
+    url("../assets/imgd.jpg");
 }
 .porfolio {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/imgf.jpg");
+    url("../assets/imgj.jpg");
 }
 .blog {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -28,5 +26,19 @@
 }
 .contact {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../assets/img2.jpg");
+    url("../assets/img7.jpg");
+}
+
+.banner-cont {
+  position: relative;
+  color: #fefefe;
+  height: 500px;
+}
+
+.banner {
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  font-size: 1.8rem;
+  font-weight: 400;
 }

@@ -4,6 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, Navigate } from "react-router-dom";
 
 import HeaderBlock from "./components/header";
+import FooterBlock from "./components/footer";
 import NotFound from "./components/notfound";
 import About from "./pages/about/about";
 import Blog from "./pages/blog/blog";
@@ -14,7 +15,7 @@ import Service from "./pages/services/service";
 
 function App() {
   return (
-    <div>
+    <div className="roboto">
       <HeaderBlock title={"Suluhi"} />
       <Routes>
         <Route path="about" element={<About />} />
@@ -26,6 +27,7 @@ function App() {
         <Route path="/" element={<Navigate to="/home" replace={true} />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      <FooterBlock />
     </div>
   );
 }
