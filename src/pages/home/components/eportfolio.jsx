@@ -51,7 +51,7 @@ const Portfolio = () => {
   ));
   return (
     <div>
-      <Container>
+      <Container fluid="lg">
         <div className="text-center porfConta">
           <div className="py-3 text-primary">Recent Portfolio</div>
           <h3 className="fw-normal">Our Exceptional Work</h3>

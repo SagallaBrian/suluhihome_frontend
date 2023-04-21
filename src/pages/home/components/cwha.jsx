@@ -10,7 +10,7 @@ const Whoweare = () => {
 
   return (
     <div className="roboto py-5">
-      <Container>
+      <Container fluid="lg">
         <Row>
           <Col lg>
             <div className="whoweareleft">

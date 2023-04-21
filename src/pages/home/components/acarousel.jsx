@@ -35,7 +35,7 @@ const SulCarousel = () => {
   const renderedBanner = banners.map((banner) => (
     <Carousel.Item key={banner.id}>
       <div className={banner.divclass}>
-        <Container>
+        <Container fluid="lg">
           <Row>
             <Col md="9">
               <p>{banner.startparag}</p>

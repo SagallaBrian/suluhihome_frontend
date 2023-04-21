@@ -51,7 +51,7 @@ const Faq = () => {
     </Accordion.Item>
   ));
   return (
-    <Container>
+    <Container fluid="lg">
       <div className="py-5">
         <Row>
           <Col md>

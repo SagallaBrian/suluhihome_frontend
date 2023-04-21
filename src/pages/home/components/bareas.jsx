@@ -57,7 +57,7 @@ const Bareas = () => {
   return (
     <div className="bg-light roboto">
       <Container fluid>
-        <div className="px-4 py-5">
+        <div className="px-2 py-5">
           <Row>
             <Col className="d-none d-xl-block"></Col>
             {renderedServices}

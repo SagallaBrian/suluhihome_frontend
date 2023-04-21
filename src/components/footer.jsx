@@ -27,7 +27,6 @@ const footerItems = [
     id: 2,
     headings: "Social media",
     links: [
-      { name: "GitHub", link: "https://github.com/SagallaBrian" },
       {
         name: "LinkedIn",
         link: "https://www.linkedin.com/in/brian-sagalla-7a8764117/",
@@ -52,7 +51,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
   const renderedItems = footerItems.map((item) => (
     <Col md key={item.id}>
-      <div className="pk">
+      <div className="pk mb-3">
         <h5 className="sul-semibold">{item.headings}</h5>
         {item.links.map((link) => (
           <div className="p_fonts py-1">{link.name}</div>
@@ -62,7 +61,7 @@ const Footer = () => {
   ));
   return (
     <div className="sul-footer ">
-      <Container>
+      <Container fluid="lg">
         <div className="pt-5 pb-2">
           <Row className="py-2">
             <Col md>
@@ -79,7 +78,7 @@ const Footer = () => {
         </div>
       </Container>
       <div className="sul-copyright">
-        <Container>
+        <Container fluid="lg">
           <div className="py-4">
             Copyright ©{currentYear} All rights reserved.
           </div>

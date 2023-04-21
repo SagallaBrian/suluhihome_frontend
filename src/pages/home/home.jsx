@@ -1,11 +1,11 @@
-import SulCarousel from "./acarousel";
-import Bareas from "./bareas";
-import Whoweare from "./cwha";
-import Ourstaff from "./dstaff";
-import Portfolio from "./eportfolio";
-import Faq from "./faq";
-import Testimonial from "./gtestimonial";
-import Footer from "./hfooter";
+import Footer from "../../components/footer";
+import SulCarousel from "./components/acarousel";
+import Bareas from "./components/bareas";
+import Whoweare from "./components/cwha";
+import Ourstaff from "./components/dstaff";
+import Portfolio from "./components/eportfolio";
+import Faq from "./components/faq";
+import Testimonial from "./components/gtestimonial";
 import "./homestyle.css";
 
 const Home = () => {

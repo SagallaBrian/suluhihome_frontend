@@ -64,6 +64,7 @@ const HeaderBlock = ({ title }) => {
       <Navbar
         expand="lg"
         fixed="top"
+        variant="dark"
         className={`my-class ${expanded ? "mynavbg" : ""} 
          ${navbar ? "mynavbg" : ""}`}
         expanded={expanded}

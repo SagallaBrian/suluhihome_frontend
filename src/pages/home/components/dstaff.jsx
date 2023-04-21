@@ -65,7 +65,7 @@ const Ourstaff = () => {
   ));
   return (
     <div className="ourstaff">
-      <Container>
+      <Container fluid="lg">
         <div className="padStaff">
           <Row>
             <Col md>
