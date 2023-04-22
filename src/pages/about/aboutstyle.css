@@ -1,12 +1,14 @@
-.diva {
+.divimg {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 300px;
+  min-height: 300px;
   position: relative;
   border-radius: 7px;
 }
 
-.diva {
-  background-image: url("../../assets/imgg.jpg");
+@media only screen and (max-width: 576px) {
+  .divimg {
+    min-height: 230px;
+  }
 }
