@@ -2,7 +2,7 @@ import SulCarousel from "./components/acarousel";
 import Bareas from "./components/bareas";
 import Whoweare from "./components/cwha";
 import Ourstaff from "./components/dstaff";
-import Portfolio from "./components/eportfolio";
+import PortfolioSection from "./components/eportfolio";
 import Faq from "./components/faq";
 import Testimonial from "./components/gtestimonial";
 import "./homestyle.css";
@@ -14,7 +14,7 @@ const Home = () => {
       <Bareas />
       <Whoweare />
       <Ourstaff />
-      <Portfolio />
+      <PortfolioSection />
       <Faq />
       <Testimonial />
     </div>

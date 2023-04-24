@@ -10,7 +10,7 @@ const mylinks = [
   { title: "About Us", links: "about", id: 2 },
   { title: "Service", links: "service", id: 3 },
   { title: "Portfolio", links: "portfolio", id: 4 },
-  { title: "Blog", links: "blog", id: 5 },
+  // { title: "Blog", links: "blog", id: 5 },
   { title: "Contact Us", links: "contact", id: 6 },
 ];
 

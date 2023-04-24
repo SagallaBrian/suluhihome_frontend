@@ -38,7 +38,7 @@ const portfolios = [
     imgbackg: "portfo6",
   },
 ];
-const Portfolio = () => {
+const PortfolioSection = () => {
   const renderedportfolio = portfolios.map((onePort) => (
     <Col md={4} key={onePort.id}>
       <div className={`${onePort.imgbackg} mb-3`}>
@@ -68,4 +68,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default PortfolioSection;
