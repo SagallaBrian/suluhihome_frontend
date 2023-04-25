@@ -28,7 +28,7 @@ const ContactSectionA = () => {
                     </div>
                     <div className="flex-grow-1">
                       <div>Phone Number</div>
-                      <div>+254705161125 / +254106753824</div>
+                      <div>+254705161125 </div>
                     </div>
                   </div>
 

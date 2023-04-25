@@ -94,7 +94,7 @@ function ContactForm() {
             />
           </Form.Group>
         </div>
-        <Button variant="primary" type="submit" className="btn-sm">
+        <Button variant="secondary" type="submit" className="btn-sm">
           Submit
         </Button>
       </Form>
