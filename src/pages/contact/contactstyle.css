@@ -1,0 +1,21 @@
+.querydiv {
+  border-radius: 6px;
+  background-color: #404040;
+  color: #fefefe;
+  font-size: 0.87rem !important;
+}
+label {
+  margin-bottom: 0px !important;
+  color: #1a1a1a !important;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  font-size: 0.87rem !important;
+}
+
+iframe {
+  border: 0px;
+  border-radius: 9px;
+}
